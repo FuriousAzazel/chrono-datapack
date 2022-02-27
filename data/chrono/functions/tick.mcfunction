@@ -30,7 +30,7 @@ execute at @e[type=marker,tag=startchrono] as @a if entity @a[distance=0..1,tag=
 execute at @e[type=marker,tag=checkpointchrono] as @a if entity @a[distance=0..1,tag=incourse] run function chrono:checkpointplayer
 
 #finish race for player
-execute at @e[type=marker,tag=startchrono] as @a if entity @a[distance=0..1,tag=incourse,tag=checkpoint] run function chrono:finishplayer
+execute at @e[type=marker,tag=startchrono] as @a[distance=0..1] if entity @a[distance=0..1,tag=incourse,tag=checkpoint] run function chrono:finishplayer
 
 #remove tag checkpoint on player walk on anticheat
 execute at @e[type=marker,tag=anticheatchrono] as @a if entity @a[distance=0..1,tag=incourse,tag=checkpoint] run function chrono:anticheat
