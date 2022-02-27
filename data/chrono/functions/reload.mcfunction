@@ -1,2 +1,2 @@
-datapack disable "file/lapalmchrono"
-datapack enable "file/lapalmchrono"
+datapack disable "file/lapalmchrono.zip"
+datapack enable "file/lapalmchrono.zip"
