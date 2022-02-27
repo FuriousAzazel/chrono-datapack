@@ -3,6 +3,8 @@ execute as @a[scores={set_start_chrono=1..}] at @s run function chrono:setstart
 execute as @a[scores={remove_start_chrono=1..}] at @s run function chrono:removestart
 execute as @a[scores={set_checkpoint_chrono=1..}] at @s run function chrono:setcheckpoint
 execute as @a[scores={remove_checkpoint_chrono=1..}] at @s run function chrono:removecheckpoint
+execute as @a[scores={help_en=1..}] at @s run function chrono:helpen
+execute as @a[scores={help_fr=1..}] at @s run function chrono:helpfr
 
 #allow player use /trigger
 scoreboard players enable @a set_start_chrono
