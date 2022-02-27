@@ -8,4 +8,4 @@ scoreboard players enable @a set_checkpoint_chrono
 scoreboard players enable @a remove_checkpoint_chrono
 execute at @e[type=marker,tag=startchrono] if entity @a[distance=0..20,nbt={SelectedItem:{id:"minecraft:stick"}}] run particle minecraft:happy_villager ~ ~ ~ 0.1 0.5 0.1 1 1 normal
 execute at @e[type=marker,tag=checkpointchrono] if entity @a[distance=0..20,nbt={SelectedItem:{id:"minecraft:stick"}}] run particle minecraft:wax_on ~ ~ ~ 0.1 0.5 0.1 1 1 normal
-execute at @e[type=marker,tag=startchrono] if entity @a[distance=0..0.20] run function chrono:startplayer
+execute at @e[type=marker,tag=startchrono] as @a if entity @a[distance=0..1] run function chrono:startplayer
