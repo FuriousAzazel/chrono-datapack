@@ -2,6 +2,8 @@ scoreboard objectives add set_start_chrono trigger
 scoreboard objectives add remove_start_chrono trigger
 scoreboard objectives add set_checkpoint_chrono trigger
 scoreboard objectives add remove_checkpoint_chrono trigger
+scoreboard objectives add set_anticheat_chrono trigger
+scoreboard objectives add remove_anticheat_chrono trigger
 scoreboard objectives add help_fr trigger
 scoreboard objectives add help_en trigger
 scoreboard objectives add chrono dummy
