@@ -24,3 +24,5 @@ execute at @e[type=marker,tag=startchrono] as @a if entity @a[distance=0..1,tag=
 #give tag on player walk on checkpoint
 execute at @e[type=marker,tag=checkpointchrono] as @a if entity @a[distance=0..1,tag=incourse] run function chrono:checkpointplayer
 
+#
+execute at @e[type=marker,tag=startchrono] as @a if entity @a[distance=0..1,tag=incourse,tag=checkpoint] run function chrono:finishplayer
