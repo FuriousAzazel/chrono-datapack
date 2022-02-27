@@ -21,7 +21,7 @@ scoreboard players enable @a help_fr
 #run particles with stick on checkpoint and start
 execute at @e[type=marker,tag=startchrono] if entity @a[distance=0..20,nbt={SelectedItem:{id:"minecraft:stick"}}] run particle minecraft:happy_villager ~ ~ ~ 0.1 0.5 0.1 1 1 normal
 execute at @e[type=marker,tag=checkpointchrono] if entity @a[distance=0..20,nbt={SelectedItem:{id:"minecraft:stick"}}] run particle minecraft:wax_on ~ ~ ~ 0.1 0.5 0.1 1 1 normal
-execute at @e[type=marker,tag=anticheatchrono] if entity @a[distance=0..20,nbt={SelectedItem:{id:"minecraft:stick"}}] run particle minecraft:flame ~ ~ ~ 0.1 0.5 0.1 1 1 normal
+execute at @e[type=marker,tag=anticheatchrono] if entity @a[distance=0..20,nbt={SelectedItem:{id:"minecraft:stick"}}] run particle minecraft:witch ~ ~ ~ 0.1 0.5 0.1 1 1 normal
 
 #start chrono and add player in game when player walk on start
 execute at @e[type=marker,tag=startchrono] as @a if entity @a[distance=0..1,tag=!incourse,tag=!checkpoint] run function chrono:startplayer
