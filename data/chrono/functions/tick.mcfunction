@@ -34,3 +34,7 @@ execute at @e[type=marker,tag=startchrono] as @a if entity @a[distance=0..1,tag=
 
 #remove tag checkpoint on player walk on anticheat
 execute at @e[type=marker,tag=anticheatchrono] as @a if entity @a[distance=0..1,tag=incourse,tag=checkpoint] run function chrono:anticheat
+
+#remove tag potential not remove with player deconected in game
+execute if score secondes chrono matches 0 if score minutes chrono matches 0 run tag @a remove incourse
+execute if score secondes chrono matches 0 if score minutes chrono matches 0 run tag @a remove checkpoint
