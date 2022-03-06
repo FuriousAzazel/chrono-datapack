@@ -8,6 +8,7 @@ scoreboard objectives add help_fr trigger
 scoreboard objectives add help_en trigger
 scoreboard objectives add chrono dummy
 scoreboard objectives add quitte minecraft.custom:minecraft.leave_game
+scoreboard objectives add force_finish_chrono trigger
 scoreboard players set secondes chrono 0
 scoreboard players set minutes chrono 0
 scoreboard players set heures chrono 0

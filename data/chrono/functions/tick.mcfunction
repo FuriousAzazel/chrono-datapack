@@ -7,6 +7,7 @@ execute as @a[scores={set_anticheat_chrono=1..}] at @s run function chrono:setan
 execute as @a[scores={remove_anticheat_chrono=1..}] at @s run function chrono:removeanticheat
 execute as @a[scores={help_en=1..}] at @s run function chrono:helpen
 execute as @a[scores={help_fr=1..}] at @s run function chrono:helpfr
+execute as @a[scores={force_finish_chrono=1..}] at @s run function chrono:reset
 
 #allow player use /trigger
 scoreboard players enable @a set_start_chrono

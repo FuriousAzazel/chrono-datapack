@@ -5,3 +5,4 @@ scoreboard players set minutes chrono 0
 scoreboard players set heures chrono 0
 tag @a remove incourse
 tag @a remove checkpoint
+scoreboard players reset @s force_finish_chrono
