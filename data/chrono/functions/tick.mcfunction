@@ -16,6 +16,7 @@ scoreboard players enable @a set_checkpoint_chrono
 scoreboard players enable @a remove_checkpoint_chrono
 scoreboard players enable @a set_anticheat_chrono
 scoreboard players enable @a remove_anticheat_chrono
+scoreboard players enable @a force_finish_chrono
 scoreboard players enable @a help_en
 scoreboard players enable @a help_fr
 
